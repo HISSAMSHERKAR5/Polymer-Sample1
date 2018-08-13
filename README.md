@@ -8,6 +8,13 @@ Steps to run the project
 5. Click on the "/isbnView/pg1017" link to test isbn-1017 data.
 6. Added a simple test case for isbn-view component for checking its props.Run polymer test.
 
+If running Windows you will need to set the following environment variables:
+
+LAUNCHPAD_BROWSERS
+LAUNCHPAD_CHROME
+(This kept me awake late night since I was not getting, what I was missing :( )
+Read More here daffl/launchpad
+
 
 Happy Learning
 Cheers!
