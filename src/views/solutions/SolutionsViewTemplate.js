@@ -22,14 +22,10 @@ export const TEMPLATE=html`<div class="purchase-option-content">
    <h2>Included with your book</h2>
    <ul class="included-items">
       <li>
-         <din class="item">21-day Refund Guarantee</din>
+         <din class="item">This is my world</din>
          <a role="link" tabindex="0" class="helper-link">
-            Learn More
-            <span class="helper-tooltip">
-               <div class="close" title="" role="button" aria-label="close"></div>
-               <div class="header">We put you (the student) first:</div>
-               <p>Guarantee delivery of your books no later than the shipping date on your order confirmation. Return within 21 days of the order for any reason.</p>
-            </span>
+            I'm too good, actually Awesome !!
+            
          </a>
       </li>
    </ul>
