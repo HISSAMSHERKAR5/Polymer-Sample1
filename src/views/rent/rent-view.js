@@ -28,10 +28,10 @@ class RentView extends PolymerElement {
 
 dataChanged(response) {
   console.log("dataChanged",response);  
-  if(response.file)  this.file=response.file;
-  if(response.first)  this.first=response.first;
-  if(response.num)  this.num=response.num;
-  if(response.title)  this.title=response.title;
+  if(response.file)  this.file=response.file; else this.file="";
+  if(response.first)  this.first=response.first; else this.first="";
+  if(response.num)  this.num=response.num; else this.num="";
+  if(response.title)  this.title=response.title; else this.title="";
 }
 
    ready() {

@@ -62,11 +62,16 @@ class ISBNView extends PolymerElement {
       this.coverImage="https://d1re4mvb3lawey.cloudfront.net"+this.isbn+"/cover.jpg"; 
       this.getISBNAuthors();
       this.date=(response && response.date)?response.date:"";
-      if(response.toc && response.toc.length>0){
+      if(response && response.toc && response.toc.length>0){
         this.rent=response.toc[0]?response.toc[0]:"";
         this.buy=response.toc[2]?response.toc[2]:"";
         this.electronic=response.toc[1]?response.toc[1]:"";
         this.solutions=response.toc[3]?response.toc[3]:"";
+      }else{
+        this.rent="";
+        this.buy="";
+        this.electronic="";
+        this.solutions="";
       }
    }
   }
