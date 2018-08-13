@@ -26,10 +26,13 @@ export const TEMPLATE=html`<div class="purchase-option-content">
          <a role="link" tabindex="0" class="helper-link">
             Learn More
             <span class="helper-tooltip">
-               <div class="close" title="" role="button" aria-label="close"></div>
-               <div class="header">We put you (the student) first:</div>
-               <p>Guarantee delivery of your books no later than the shipping date on your order confirmation. Return within 21 days of the order for any reason.</p>
-            </span>
+            <div class="header" title="" role="button" aria-label="close">{{title}}</div>
+            <div class="header">FIRST:{{first}}</div>
+            <div class="header">Num:{{num}}</div>
+            <div class="header">
+            <a class="textbook-solution-link" href="{{file}}" target="_blank">File</a>
+            </div>
+         </span>
          </a>
       </li>
    </ul>

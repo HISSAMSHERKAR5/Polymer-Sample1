@@ -36,7 +36,12 @@ class ISBNView extends PolymerElement {
       contributors:{
         type: String,
         reflectToAttribute: true        
-      }
+      },
+      rent:{type: Object,reflectToAttribute: true,value:""},
+      buy:{type: Object,reflectToAttribute: true,value:""},
+      electronic:{type: Object,reflectToAttribute: true,value:""},
+      solutions:{type: Object,reflectToAttribute: true,value:""},
+
     };
   }
 
@@ -57,6 +62,12 @@ class ISBNView extends PolymerElement {
       this.coverImage="https://d1re4mvb3lawey.cloudfront.net"+this.isbn+"/cover.jpg"; 
       this.getISBNAuthors();
       this.date=(response && response.date)?response.date:"";
+      if(response.toc && response.toc.length>0){
+        this.rent=response.toc[0]?response.toc[0]:"";
+        this.buy=response.toc[2]?response.toc[2]:"";
+        this.electronic=response.toc[1]?response.toc[1]:"";
+        this.solutions=response.toc[3]?response.toc[3]:"";
+      }
    }
   }
 

@@ -27,7 +27,7 @@ export const TEMPLATE=html`
   </div>   
           
   <span class="textbook-solution-icon">
-      <a class="textbook-solution-link" href="{{data.pathTo.toc}}" target="_blank">{{data.title}}</a>
+      <a class="textbook-solution-link" href="{{data.pathTo}}" target="_blank">{{data.title}}</a>
   </span>
   <div class="pdp-details-row clearfix">
       <span class="pdp-details-label">Contributors:</span>
@@ -75,7 +75,7 @@ export const TEMPLATE=html`
                   <div class="tab-page-class">
                     <div id="mainrent" class="clearfix">
                             <div  id="rentright" class="right">
-                                 <rent-view></rent-view>
+                                 <rent-view data="{{rent}}"></rent-view>
                             </div>
                             <div  id="rentleft" class="left">
                                 <div>
@@ -87,7 +87,7 @@ export const TEMPLATE=html`
                   <div class="tab-page-class">
                         <div id="electronicmain" class="clearfix">
                                     <div  id="electronicright" class="right">
-                                        <electronic-view></electronic-view>
+                                        <electronic-view data="{{electronic}}"></electronic-view>
                                     </div>
                                     <div  id="left" class="left">
                                         <div>
@@ -99,7 +99,7 @@ export const TEMPLATE=html`
                   <div class="tab-page-class">
                     <div id="buymain" class="clearfix">
                             <div  id="buyright" class="right">
-                                <buy-view></buy-view>
+                                <buy-view data="{{buy}}"></buy-view>
                             </div>
                             <div  id="buyleft" class="left">
                                 <div>
@@ -111,7 +111,7 @@ export const TEMPLATE=html`
                   <div class="tab-page-class">
                     <div id="solutionsmain" class="clearfix">
                             <div  id="solutionsviewright" class="right">
-                                <solutions-view></solutions-view>
+                                <solutions-view data="{{solutions}}"></solutions-view>
                             </div>
                             <div  id="solutionsleft" class="left">
                                 <div>
