@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>isbn-view</title>
+
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
+    <script src="../node_modules/wct-browser-legacy/browser.js"></script>
+
+    <!-- Import the element to test -->
+    <script type="module" src="../src/views/isbn-view.js"></script>
+  </head>
+  <body>
+    <test-fixture id="isbnview">
+      <template>
+        <isbn-view isbn="pg1017" name="isbnView" data="{some data}" route="pg1017"></isbn-view>
+      </template>
+    </test-fixture>
+
+    <script type="module">
+      suite('isbn-view tests', function () {
+
+            test('Testing props for isbnview', function () {
+                var myView = fixture('isbnview');
+                test('sets the "data" property from {some data}', function () {
+                    assert.equal(myView.data, '{some data}');
+                });
+
+                test('sets the "isbn" property from pg1017', function () {
+                    assert.equal(myView.isbn, 'pg1017');
+                });
+                test('sets the "route" property from pg1017', function () {
+                    assert.equal(myView.route, 'pg1017');
+                });
+                
+            });
+        });
+    </script>
+  </body>
+</html>
