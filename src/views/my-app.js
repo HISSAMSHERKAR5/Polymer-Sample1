@@ -116,8 +116,8 @@ class MyApp extends PolymerElement {
             <a name="view1" href="[[rootPath]]view1">View One</a>
             <a name="view2" href="[[rootPath]]view2">View Two</a>
             <a name="view3" href="[[rootPath]]view3">View Three</a>
-            <a name="biblotech" href="[[rootPath]]isbnView/pg1017">isbn:pg1017</a>
-            <a name="biblotech" href="[[rootPath]]isbnView/pg1018">isbn:pg1018</a>
+            <a name="B1" href="[[rootPath]]isbnView/pg1017">isbn:pg1017</a>
+            <a name="B2" href="[[rootPath]]isbnView/pg1018">isbn:pg1018</a>
           </iron-selector>
         </app-drawer>
 
